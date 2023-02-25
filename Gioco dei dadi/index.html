@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gioco dei dadi</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
+    <div class="container">
+        <h1 id="title"><i class="fa-solid fa-dice"></i> GIOCO DEI DADI <i class="fa-solid fa-dice"></i></h1>
+        <div class="final_result">
+            <h2>RIASSUNTO PARTITA</h2>
+            <div id="player_number"></div>
+            <div id="cpu_number"></div>
+        </div>
+        <div id="final_message"></div>
+    </div>
+    
     <!-- Inizio collegamento a file JS -->
     <script src="js/main.js"></script>
     <!-- Fine collegamento a file JS -->

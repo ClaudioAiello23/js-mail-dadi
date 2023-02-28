@@ -30,17 +30,17 @@ mostrare un alert che premia il giocatore come vincitore;
 mostrare un alert che premia il giocatore come vincitore;
 - se la differenza tra playerNumber e cpuNumber è maggiore di zero,
 mostrare un alert che premia il giocatore come vincitore;*/
-if (finalNumber > 0){
+    if (finalNumber > 0){
     alert('SIIIIIIIIII, HAI VINTO!!!!');
     document.getElementById('final_message').innerHTML = 'SIIIIIIIIII, HAI VINTO !!!!';
     console.log("Risultato: Ha vinto il giocatore");
     
-} else if (finalNumber < 0){
+ }  else if (finalNumber < 0){
     alert('PECCATO, HA VINTO LA CPU! !!!!');
     document.getElementById('final_message').innerHTML = 'PECCATO, HA VINTO LA CPU ! !!!!';
     console.log("Risultato: Ha vinto la Cpu");
 
-} else {
+}   else {
     alert('ABBIAMO PAREGGIATO, 1-1......ICS!!!!');
     document.getElementById('final_message').innerHTML = 'ABBIAMO PAREGGIATO, 1-1......ICS !!!!';
     console.log("Risultato: Pareggio");
@@ -51,21 +51,25 @@ document.getElementById('player_number').innerHTML = `Numero Giocatore: ${player
 document.getElementById('cpu_number').innerHTML = `Numero Cpu: ${cpuNumber}`;
 
 
-// SWITCH NON FUNZIONA CORRETTAMENTE - CHIEDERE
-// switch (finalNumber){
+// // SWITCH - SOLUZIONE ALTERNATIVA AL POSTO DELLA CONDIZIONE IF - INSERITA COME COMMENTO MA TESTATA E FUNZIONANTE.
+//  switch (true){
+    
+
+//    case finalNumber > 0 :
+//         alert('SIIIIIIIIII, HAI VINTO!!!!');
+//         document.getElementById('final_message').innerHTML = 'SIIIIIIIIII, HAI VINTO !!!!';
+//         console.log("hai vinto");
+//         break;
 
 //     case finalNumber < 0 :
-//     // alert('SIIIIIIIIII, HAI VINTO!!!!');
-//     console.log("hai vinto");
-//     break;
-
-//     case finalNumber < 0 :
-//     // alert('PECCATO, HA VINTO LA CPU! !!!!');
-//     console.log("hai perso");
-//     break;
+//         alert('PECCATO, HA VINTO LA CPU! !!!!');
+//         document.getElementById('final_message').innerHTML = 'PECCATO, HA VINTO LA CPU !!!!';
+//         console.log("hai perso");
+//         break;
 
 //     default: 
-//     // alert('ABBIAMO PAREGGIATO, 1-1......ICS!!!!');
-//     console.log("pareggio");
+//         alert('ABBIAMO PAREGGIATO, 1-1......ICS!!!!');
+//         document.getElementById('final_message').innerHTML = 'ABBIAMO PAREGGIATO, 1-1......ICS !!!!';
+//         console.log("pareggio");
     
 // }
